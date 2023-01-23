@@ -19,7 +19,8 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './index.html'
+        template: './index.html',
+        title: 'JATE'
       }),
       new WebpackPwaManifest({
         name: 'Just Another Text Editor',
@@ -27,7 +28,7 @@ module.exports = () => {
         description: 'J.A.T.E Just Another Text Editor',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        publicPath: "./",
+        publicPath: './',
         start_url: './',
         icons: [
           {
@@ -37,7 +38,10 @@ module.exports = () => {
           },
         ]
       }),
-      new InjectManifest()
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: './src-sw.js'
+      })
     ],
 
     module: {
