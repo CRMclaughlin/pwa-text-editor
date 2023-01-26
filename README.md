@@ -1,8 +1,6 @@
 # PWA Text Editor
 
 
-# Social Network Api
-
 ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
