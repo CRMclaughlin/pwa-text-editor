@@ -37,9 +37,10 @@
 
   
 ## Usage 
+
+
+  Try it live on [Heroku](https://safe-badlands-78754.herokuapp.com/)
    
-   https://safe-badlands-78754.herokuapp.com/
-  
   
 ## Demo
 
